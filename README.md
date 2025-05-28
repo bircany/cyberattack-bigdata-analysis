@@ -21,8 +21,7 @@ Proje aşağıdaki ana Python dosyalarından oluşmaktadır:
 
 *   `data_preprocessing.py`: Ham veri setinin yüklenmesi, temel analizlerin yapılması (istatistiksel özetler, dağılımlar, zaman serisi), eksik değerlerin doldurulması, duplike kayıtların silinmesi ve aykırı değerlerin yönetilmesi (capping) gibi veri temizleme ve ön işleme adımlarını içerir. Temizlenmiş veriyi bir CSV dosyasına kaydeder.
 *   `feature_engineering.py`: Temizlenmiş veri setinden zaman bazlı özellikler (saat, gün, ay, hafta sonu), bölgesel özellikler (IP okteti) ve kategori bazlı özellikler (saldırı süresi, zarar miktarı kategorileri) gibi yeni ve anlamlı özellikler türetir. Mühendislik uygulanmış veriyi bir CSV dosyasına kaydeder.
-*   `feature_transformation.py`: Mühendislik uygulanmış veri setindeki sayısal özellikleri ölçeklendirir (`StandardScaler`) ve kategorik özellikleri One-Hot Encoding (`OneHotEncoder`) ile sayısal formata d![Ekran görüntüsü 2025-05-28 032206](https://github.com/user-attachments/assets/8828a57b-615c-4088-98bf-e2303de1beaa)
-önüştürür. Ayrıca, dönüştürülmüş özelliklerin hedef değişkenle korelasyonunu analiz eder ve görselleştirir. Dönüştürülmüş veri setini (özellikler ve hedef dahil) bir CSV dosyasına kaydeder.
+*   `feature_transformation.py`: Mühendislik uygulanmış veri setindeki sayısal özellikleri ölçeklendirir (`StandardScaler`) ve kategorik özellikleri One-Hot Encoding (`OneHotEncoder`) ile sayısal formata dönüştürür. Ayrıca, dönüştürülmüş özelliklerin hedef değişkenle korelasyonunu analiz eder ve görselleştirir. Dönüştürülmüş veri setini (özellikler ve hedef dahil) bir CSV dosyasına kaydeder.
 *   `outcome_analysis.py`: (Bu dosyanın mevcut amacına göre bir açıklama eklenmeli. Örneğin: "Saldırı sonuçları (`outcome`) ile ilgili derinlemesine analizler ve görselleştirmeler yapar.")
 *   `model_training.py`: (Bu dosyanın mevcut amacına göre bir açıklama eklenmeli. Örneğin: "Hazırlanmış veri seti üzerinde makine öğrenmesi modellerini eğitir, değerlendirir ve kaydeder.")
 
@@ -53,6 +52,8 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 4.  `data` klasörünün içine kullandığınız veri setini (`cybersecurity_large_synthesized_data.csv` gibi) yerleştirin veya kod içindeki dosya yolunu kendi veri setinize göre güncelleyin.
 
 ## Kullanım
+
+![Ekran görüntüsü 2025-05-28 032206](https://github.com/user-attachments/assets/8828a57b-615c-4088-98bf-e2303de1beaa)
 
 Dosyaları sırayla çalıştırarak veri işleme ve analiz adımlarını gerçekleştirebilirsiniz:
 
